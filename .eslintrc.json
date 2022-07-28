@@ -1,3 +1,47 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": [
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "prettier",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["prettier", "@typescript-eslint"],
+    "env": { "jest": true },
+    "globals": {
+        "JSX": true
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        // Single Quotations should always be used
+        "quotes": ["error", "single"],
+        // All switch statements should have a default clause
+        "default-case": "error",
+        // A Switch default clause should be at the end of the switch statement
+        "default-case-last": "error",
+        // Enforces strict equality type check i.e. "===" and not "=="
+        "eqeqeq": "error",
+        // No console logs
+        "no-console": "warn",
+        // No var
+        "no-var": "error",
+        // Warn against using let if variable is not reassigned
+        "prefer-const": [
+            "error",
+            {
+                "destructuring": "any",
+                "ignoreReadBeforeAssign": false
+            }
+        ],
+        // Require single whitespace at the start of any comment, no exceptions
+        "spaced-comment": ["error", "always"],
+        // No Yoda code shall you write, kinda just wanted this because Star Wars :)
+        "yoda": "error",
+        "@typescript-eslint/explicit-function-return-type": [
+            2,
+            { "allowExpressions": true }
+        ],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/ban-ts-comment": "off"
+    }
 }
