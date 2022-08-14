@@ -40,10 +40,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Dependancies
 
--   React
--   Next
--   Typescript
--   Tailwind and sass
--   Zustand
--   Jest
--   Eslint and Prettier
+-   React "18.2.0"
+-   Next "12.2.3"
+-   Typescript "4.7.4"
+-   Tailwind "^3.1.6",
+-   sass "^1.54.0",
+-   Zustand "^4.0.0"
+-   Storybook "^6.5.10" (Current version has 21 vulnerabilities. Most of these will be fixed with the release of version 7)
+-   Jest "^28.1.3"
+-   Eslint and Prettier "^8.2.0"
