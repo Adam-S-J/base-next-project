@@ -3,7 +3,7 @@
 First clone the repo and install dependancies, simple :)
 
 ```bash
-git clone https://github.com/Adam-S-J/playground.git
+git clone https://github.com/Adam-S-J/base-next-project.git
 npm i
 npm run dev
 ```
@@ -15,6 +15,8 @@ npm run dev
     build: Builds the project for production
     start: Starts the production server on http://localhost:3000 (if a build has been generated)
     test: Runs the Jest testing library
+    lint: Runs ESLint on all files
+    storybook: Opens storybook in the browser
 ```
 
 ## Housekeeping
@@ -48,4 +50,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 -   Zustand "^4.0.0"
 -   Storybook "^6.5.10" (Current version has 21 vulnerabilities. Most of these will be fixed with the release of version 7)
 -   Jest "^28.1.3"
--   Eslint and Prettier "^8.2.0"
+-   Eslint "^8.2.0"
+-   Prettier "^2.7.1"
